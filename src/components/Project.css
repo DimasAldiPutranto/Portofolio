@@ -1,0 +1,102 @@
+/* Project.css */
+.project-container {
+    display: flex;
+    flex-direction: row; /* Arahkan flex menjadi baris untuk desktop */
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 10px;
+}
+
+.screenshot-slider {
+    flex: 1;
+    max-width: 50%; /* Atur lebar maksimum untuk slider */
+}
+
+.screenshot {
+    display: flex; /* Tambahkan flex untuk mengatur gambar */
+    justify-content: center; /* Pusatkan gambar */
+    align-items: center; /* Pusatkan gambar secara vertikal */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+}
+
+.screenshot img {
+    width: 100%; /* Lebar gambar mengikuti kontainer */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    border-radius: 20px; /* Tambahkan sudut melengkung */
+    object-fit: contain; /* Memastikan gambar tidak terpotong */
+}
+
+.project-description {
+    flex: 1;
+    max-width: 40%; /* Atur lebar maksimum untuk deskripsi */
+}
+
+.project-description h2 {
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Gaya untuk tombol panah */
+.slick-prev, .slick-next {
+    z-index: 1; /* Pastikan tombol panah berada di atas slider */
+    color: white; /* Warna tombol panah */
+    font-size: 24px; /* Ukuran font untuk tombol panah */
+}
+
+/* Gaya untuk indikator bulat */
+.slick-dots {
+    bottom: -30px; /* Posisi indikator bulat */
+}
+
+.slick-dots li button:before {
+    font-size: 12px; /* Ukuran indikator bulat */
+    color: gray; /* Warna indikator bulat tidak aktif */
+}
+
+.slick-dots li.slick-active button:before {
+    color: black; /* Warna indikator bulat aktif */
+}
+
+/* Media Queries untuk Responsivitas */
+/* Media Queries untuk Responsivitas */
+@media (max-width: 1024px) {
+    .project-container {
+        flex-direction: column;
+      
+    }
+
+    .screenshot-slider {
+        max-width: 100%; /* Lebar maksimum slider tetap 50% */
+    }
+
+    .project-description {
+        max-width: 100%; /* Lebar maksimum deskripsi tetap 50% */
+        text-align: justify; /* Pusatkan teks deskripsi */
+
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column; /* Ubah arah flex menjadi kolom untuk layar kecil */
+        align-items: center; /* Pusatkan konten */
+    }
+
+    .screenshot-slider {
+        max-width: 100%; /* Lebar maksimum slider menjadi 100% */
+    }
+
+    .project-description {
+        max-width: 100%; /* Lebar maksimum deskripsi menjadi 100% */
+        text-align: justify; /* Pusatkan teks deskripsi */
+    }
+
+    .screenshot img {
+        max-height: 200px; /* Batasi tinggi maksimum untuk layar kecil */
+    }
+}

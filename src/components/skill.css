@@ -1,0 +1,28 @@
+.skills-container {
+    overflow: hidden; /* Menyembunyikan bagian yang keluar dari kontainer */
+    white-space: nowrap; /* Mencegah elemen membungkus ke baris berikutnya */
+}
+
+.skills-wrapper {
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    animation: move 10s linear infinite; /* Animasi bergerak */
+}
+
+.skill {
+    display: inline-block; /* Membuat setiap skill menjadi inline-block */
+    margin: 0 20px; /* Jarak antar logo */
+}
+
+.skill img {
+    height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+    width: auto; /* Menjaga rasio aspek */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%); /* Mulai dari luar kanan */
+    }
+    100% {
+        transform: translateX(-100%); /* Bergerak ke luar kiri */
+    }
+}

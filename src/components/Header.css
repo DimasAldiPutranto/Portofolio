@@ -1,0 +1,52 @@
+/* src/components/Header.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Warna latar belakang terang */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000; /* Warna teks terang */
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #007bff; /* Warna saat hover */
+}
+
+.icon {
+    transition: transform 0.3s; /* Transisi untuk animasi */
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+}
+
+.rotate {
+    transform: rotate(180deg); /* Rotasi ikon saat tema gelap */
+}
+
+/* Gaya untuk tema gelap */
+body.dark-mode {
+    background-color: #000; /* Warna latar belakang gelap */
+    color: #ffffff; /* Warna teks terang */
+}
+
+body.dark-mode .navbar {
+    background-color: #000; /* Warna latar belakang navbar gelap */
+}
+
+body.dark-mode .theme-toggle {
+    color: #fff; /* Warna teks tombol di tema gelap */
+}

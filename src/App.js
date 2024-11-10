@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { motion } from "framer-motion";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import "./style.css";
+import AboutMe from "./components/AboutMe";
+import Project from "./components/Project";
+import Project2 from "./components/Project2";
+import Project3 from "./components/Project3";
+import Skills from "./components/skill";
 
-function App() {
+const App = () => {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20 },
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Home />
+      <div >
+        <div style={{ marginTop:"50px", marginBottom:"50px" }}> 
+          <h2 style={{ marginBottom: "10px", textAlign: "center" }}>
+            Tentang Saya
+          </h2>
+          <AboutMe />
+        </div>
+        <div style={{ marginTop:"50px", marginBottom:"50px" }}>
+        <h2 style={{ marginBottom: "40px", textAlign: "center" }}>
+            Skill
+          </h2>
+          <Skills />
+        </div>
+        <div style={{ marginTop:"50px", marginBottom:"50px" }}>
+        <h2 style={{ marginBottom: "10px", textAlign: "center" }}>
+            Project
+          </h2>
+          <Project />
+          <Project2 />
+          {/* <Project3 /> */}
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
