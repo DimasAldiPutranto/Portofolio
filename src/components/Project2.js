@@ -60,7 +60,7 @@ const Project2 = () => {
             <div className="project-description">
                 <h2>Market Place</h2>
                 <p>
-                    Ini adalah Project pribadi yang yaitu market place. Project ini adalah aplikasi mobile marketplace yang dibangun menggunakan Flutter untuk tampilan antarmuka (frontend) dan Laravel Filament sebagai backend (administrasi) yang terhubung melalui API. Fitur Utama: Login/Registrasi, Pencarian Produk, Keranjang Belanja, dan Pembayaran.
+                    Ini adalah Project yang yaitu MarketPlace. Project ini adalah Website marketplace yang dibangun menggunakan Laravel. Fitur Utama: Login/Registrasi, Pencarian Produk, Keranjang Belanja, dan Pembayaran.
                 </p>
             </div>
         </div>

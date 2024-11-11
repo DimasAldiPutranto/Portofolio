@@ -58,7 +58,7 @@ const Home = () => {
                 </a>
             </div>
             <a
-                href="https://www.instagram.com/dimasald.p/"
+                href="https://wa.me/6281315496635"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
