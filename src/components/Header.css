@@ -39,12 +39,12 @@
 
 /* Gaya untuk tema gelap */
 body.dark-mode {
-    background-color: #000; /* Warna latar belakang gelap */
+    background-color: #0B111D; /* Warna latar belakang gelap */
     color: #ffffff; /* Warna teks terang */
 }
 
 body.dark-mode .navbar {
-    background-color: #000; /* Warna latar belakang navbar gelap */
+    background-color: #0B111D; /* Warna latar belakang navbar gelap */
 }
 
 body.dark-mode .theme-toggle {
