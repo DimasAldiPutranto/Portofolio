@@ -26,7 +26,7 @@ const Header = () => {
                     size="lg"
                     className={`icon ${isDarkMode ? 'rotate' : ''}`} // Tambahkan kelas untuk animasi
                 />
-                <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                <span>{isDarkMode }</span>
             </button>
         </nav>
     );

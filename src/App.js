@@ -24,13 +24,13 @@ const App = () => {
       <div >
         <div style={{ marginTop:"50px", marginBottom:"50px" }}> 
           <h2 style={{ marginBottom: "10px", textAlign: "center" }}>
-            Tentang Saya
+            About Me
           </h2>
           <AboutMe />
         </div>
         <div style={{ marginTop:"50px", marginBottom:"50px" }}>
         <h2 style={{ marginBottom: "40px", textAlign: "center" }}>
-            Skill
+            Skills
           </h2>
           <Skills />
         </div>

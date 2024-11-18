@@ -31,7 +31,7 @@ const AboutMe = () => {
     }, []);
 
     // Teks yang akan ditampilkan
-    const text = `Hi, saya Dimas Aldi Putranto! Saya Merupakan Front-End Developer yang bersemangat menciptakan karya yang menarik dan fungsional pengalaman web. Dengan latar belakang desain dan pengembangan web, saya telah mengembangkan keterampilan dalam HTML, CSS, Dan JavaScript untuk membuat antarmuka pengguna yang responsif dan menarik. Saya juga Mempunyai beberapa keahlian dan pengalaman mengembangkan project.`;
+    const text = `Hi, I'm Dimas Aldi Putranto! I Am UI/UX | Front-End Developer passionate about creating engaging and functional web experiences. With a background in web design and development, I have developed skills in HTML, CSS, and JavaScript to create responsive and engaging user interfaces. I also have several skills and experience developing projects.`;
 
     return (
         <div 

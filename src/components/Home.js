@@ -21,12 +21,66 @@ const Home = () => {
                 <img 
                     src={myPhoto}  // Menggunakan variabel yang telah diimpor
                     alt="Deskripsi Foto" 
-                    style={{ borderRadius: '50%', width: '200px', height: '200px' }} 
+                    style={{ borderRadius: '50%', width: '200px', height: '200px', border: '2px solid rgb(6 182 212) ' }} 
                 />
-                <p style={{ fontSize: "30px", textAlign: "center", fontWeight:"bold" }}>Dimas Aldi Putranto</p>
+                <p style={{ fontSize: "28px", textAlign: "center", fontWeight:"bold" }}>I'm Dimas Aldi Putranto</p>
+                <p style={{ fontSize: "24px", textAlign: "center", }}>UI/UX | FrontEnd Developer</p>
             </div>
-            <p style={{ fontSize: "20px", textAlign: "center" }}>Connect with me on:</p>
-            <div
+           
+            <div 
+            
+            style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "10px",
+                    gap: "30px",
+                    marginBottom: "10px",
+                }}>
+                    <a
+                href="https://wa.me/6281315496635"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                    marginTop: "10px",
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    color : "white",
+                    padding: "10px",
+                    backgroundColor: "rgb(6 182 212)",
+                    borderRadius: "30px",
+                    marginBottom: "30px",
+                }}
+            >
+                Hubungi Saya
+            </a>
+             <a
+             href="https://drive.google.com/file/d/1RqV_QCF9T44Ks9sKLTQnKLIFQd7rWSJh/view?usp=drivesdk"
+             target="_blank"
+             rel="noopener noreferrer"
+             style={{
+                 marginTop: "10px",
+                 textDecoration: "none",
+                 fontWeight: "bold",
+                 padding: "10px",
+                 borderRadius: "30px",
+                 marginBottom: "30px",
+                 color : "white",
+                 backgroundColor:"rgb(91 33 182)",
+
+             }}
+         >
+             Download CV
+            </a>
+            </div>
+
+            
+        </div>
+    );
+};
+
+export default Home;
+
+ {/* <div
                 style={{
                     display: "flex",
                     justifyContent: "center",
@@ -56,28 +110,4 @@ const Home = () => {
                 >
                     <FontAwesomeIcon icon={faInstagram} size="2x" className="icon-instagram" />
                 </a>
-            </div>
-            <a
-                href="https://wa.me/6281315496635"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                    marginTop: "10px",
-                    textDecoration: "none",
-                    color: "white",
-                    fontWeight: "bold",
-                    padding: "10px",
-                    background:
-                        "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
-                    borderRadius: "10px",
-                    marginBottom: "30px",
-                }}
-            >
-                Hubungi Saya
-            </a>
-            
-        </div>
-    );
-};
-
-export default Home;
+            </div> */}
