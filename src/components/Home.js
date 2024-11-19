@@ -54,7 +54,7 @@ const Home = () => {
                 Hubungi Saya
             </a>
              <a
-             href="https://drive.google.com/file/d/1RqV_QCF9T44Ks9sKLTQnKLIFQd7rWSJh/view?usp=drivesdk"
+             href="https://drive.google.com/file/d/10DKDGYeEYittJxcuhaj21IRhBqyS-n5C/view?usp=sharing"
              target="_blank"
              rel="noopener noreferrer"
              style={{
