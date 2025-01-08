@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import TypingEffect from "../components/TypingEffect";
 import './Home.css';
-import myPhoto from './assets/Me2.jpg';
+import myPhoto from './assets/Me.png';
 
 const Home = () => {
     console.log("Home component rendered"); // Debugging
@@ -21,8 +21,9 @@ const Home = () => {
                 <img 
                     src={myPhoto}  // Menggunakan variabel yang telah diimpor
                     alt="Deskripsi Foto" 
-                    style={{ borderRadius: '50%', width: '200px', height: '200px', border: '2px solid rgb(6 182 212) ' }} 
+                    style={{ borderRadius: '50%', width: '200px', height: '200px', border: '4px solid white  ' }} 
                 />
+                
                 <p style={{ fontSize: "28px", textAlign: "center", fontWeight:"bold" }}>I'm Dimas Aldi Putranto</p>
                 <p style={{ fontSize: "24px", textAlign: "center", }}>UI/UX | FrontEnd Developer</p>
             </div>
@@ -45,7 +46,7 @@ const Home = () => {
                     textDecoration: "none",
                     fontWeight: "bold",
                     color : "white",
-                    padding: "10px",
+                    padding: "12px",
                     backgroundColor: "rgb(6 182 212)",
                     borderRadius: "30px",
                     marginBottom: "30px",

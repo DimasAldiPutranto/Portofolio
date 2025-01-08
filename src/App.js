@@ -38,9 +38,9 @@ const App = () => {
         <h2 style={{ marginBottom: "10px", textAlign: "center" }}>
             Project
           </h2>
+          <Project3 />
           <Project />
           <Project2 />
-          {/* <Project3 /> */}
         </div>
       </div>
     </div>

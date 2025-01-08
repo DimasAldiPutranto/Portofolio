@@ -8,6 +8,12 @@
     gap: 10px;
 }
 
+.project-container img {
+    max-width: 100%; /* Memastikan gambar tidak melampaui lebar container */
+    max-height: 100%; /* Memastikan gambar tidak melampaui tinggi container */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa merusak rasio aspek */
+  }
+
 .screenshot-slider {
     flex: 1;
     max-width: 50%; /* Atur lebar maksimum untuk slider */
@@ -21,8 +27,8 @@
 }
 
 .screenshot img {
-    width: 100%; /* Lebar gambar mengikuti kontainer */
-    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    width: 600px; /* Lebar gambar mengikuti kontainer */
+    height: 400px; /* Tinggi otomatis untuk menjaga proporsi */
     border-radius: 20px; /* Tambahkan sudut melengkung */
     object-fit: contain; /* Memastikan gambar tidak terpotong */
 }
@@ -100,3 +106,16 @@
         max-height: 200px; /* Batasi tinggi maksimum untuk layar kecil */
     }
 }
+.button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks */
+    border: none; /* Menghilangkan border default */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah elemen yang dapat diklik */
+    transition: background-color 0.3s; /* Transisi halus untuk perubahan warna */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+  }
